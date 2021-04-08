@@ -16,7 +16,8 @@ public class SequenciaCrescente {
             i++;
         } while (input != 0);
 
-        System.out.println("Tamanho do array :" + array.size());
+        // System.out.println("Tamanho do array :" + array.size());
+
         for (int a = 0; a < (array.size() - 2); a++) {
             if (array.get(a) > array.get(a + 1)) {
                 // System.out.println(array.get(a) + " > " + array.get(a + 1));
@@ -27,10 +28,10 @@ public class SequenciaCrescente {
                 isCrescente = true;
             }
         }
-        if (isCrescente) {
-            System.out.println(array + "Sim");
+        if (isCrescente == true) {
+            System.out.println(array + "Sim " + (array.size() - 1));
         } else {
-            System.out.println(array + "Nao");
+            System.out.println(array + "Nao " + (array.size() - 1));
         }
     }
 }
